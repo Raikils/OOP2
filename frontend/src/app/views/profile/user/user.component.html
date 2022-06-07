@@ -1,0 +1,12 @@
+<button (click)="logout()" class="btn-primary button">Logout</button>
+<h1>Requests:</h1>
+<div class="container">
+  <div class="aside-block-1">
+
+  </div>
+  <div class="main_block">
+    <div *ngFor="let request of requests; let i = index" class="block">
+      <p class="info">Id:{{request.ID}}|Places:{{request.place}}|Class:{{request.clas}}|Approved:{{request.approved}}|Price:{{request.price}}|IDROOM:{{request.IDROOM}}</p>
+    </div>
+  </div>
+</div>
